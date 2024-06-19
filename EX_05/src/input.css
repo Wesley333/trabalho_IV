@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.link {
+    @apply text-white [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-black font-mono;
+
+    &:hover {
+        @apply text-cyan-400 text-sm;
+    }
+}
+
+.txt {
+    @apply text-white [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-black font-mono;
+}
+
+.scroll {
+    overflow: hidden;
+}
+
+.dth {
+    @apply text-cyan-300;
+
+    &:hover {
+
+        @apply text-cyan-200 cursor-pointer text-xs;
+    }
+}
+
+.centralizar {
+    @apply flex justify-center;
+}
+
+/* npx tailwindcss -i src/input.css -o src/output.css --watch */

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Contato</title>
+        <link href="src/output.css" rel="stylesheet" />
+        <link
+            rel="shortcut icon"
+            href="https://img.icons8.com/?size=256&id=81702&format=png"
+            type="image/x-icon" />
+        <script src="script.js"></script>
+    </head>
+    <body class="bg-gradient-to-t from-sky-800 to-cyan-500 h-screen">
+        <h1
+            class="text-center shadow-sm text-white text [text-shadow:1px_1px_2px_var(--tw-shadow-color)] shadow-black text-3xl font-mono p-2">
+            FORMULÁRIO DE CONTATO
+        </h1>
+        <header>
+        </header>
+        <main>
+            <div class="centralizar mt-24 text-2xl">
+                <form method="POST" action="process_form.php" class="border-4 border-slate-700 p-4 mb-14 bg-slate-400" id="form_submit">
+                    
+                    <label for="nome" class="txt">Nome:</label>
+                    <input class="mb-5 border-2 border-black rounded-lg"
+                        type="text" id="nome" name="nome"
+                        required><br>
+                    <label for="email" class="txt">E-mail:</label>
+                    <input class="mb-5 border-2 border-black rounded-lg"
+                        type="email" id="email" name="email"
+                        required><br>
+                    <label for="mensagem" class="txt">Mensagem:</label><br>
+                    <textarea
+                        class="mb-5 ml-14 border-2 border-black rounded-lg"
+                        id="mensagem" name="mensagem"
+                        rows="4"
+                        required></textarea><br>
+                    <label for="motivo-contato" class="txt">Motivo do
+                        Contato:</label>
+                    <select id="motivo-contato" name="motivo_contato"
+                        class="text-cyan-800 border-2 border-black rounded-lg"
+                        required>
+                        <option value="elogio">Elogio</option>
+                        <option value="critica">Crítica</option>
+                        <option value="sugestao">Sugestão</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="outro">Outro</option>
+                    </select><br>
+                    <button 
+                        class="mt-10 ml-36 bg-slate-100 border-2 border-black rounded-xl"
+                        type="submit">Enviar</button>
+                </form>
+            
+            </div>
+            <div class="centralizar mt-4">
+                <a class="link" href="index.html">Voltar</a>
+            </div>
+        </main>
+
+        <footer></footer>
+
+        <!-- <script src="contato.js"></script> -->
+    </body>
+</html>
+

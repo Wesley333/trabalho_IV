@@ -1,0 +1,10 @@
+.swiper {
+    height: 300px;
+    width: 200px;
+    margin-top: 40px;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: rgba(0, 255, 242, 0.897);
+}
